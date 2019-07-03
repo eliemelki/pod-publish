@@ -39,7 +39,7 @@ Create tag, will
 - create a tag
 
 ```
- ../pod-create-tag ${GIT_URL}
+ ./pod-create-tag ${GIT_URL}
 
 ```
 
