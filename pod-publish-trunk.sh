@@ -63,7 +63,8 @@ fi
 # Detect Versions
 ######################
 
-CURRENT_VERSION="1.0.0"
+PODSPEC_CONTENT=`cat "${GIT_PODSPEC}"`
+CURRENT_VERSION=`[[ "$PODSPEC_CONTENT" =~ s\.version\ +=\ +\"([^\"]*)\" ]] && echo "${BASH_REMATCH[1]}" | cat`
 
 
 ######################
